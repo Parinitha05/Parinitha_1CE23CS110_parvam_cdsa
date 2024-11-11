@@ -23,7 +23,7 @@ void create(){
         tail=newnode;
     }
 }
-void insert_at_begin(){
+void insert_at_begin(){//O(1)
     struct node *newnode=(struct node*)malloc(sizeof(struct node));
     int value;
     printf("Enter the value: ");
@@ -92,7 +92,7 @@ do{
         display();
         break;
         default:
-        printf("invalid");
+        printf("invalid \n");
     }
 }while(choice!=0);
 }  
